@@ -1246,6 +1246,11 @@ export default class VideoPlayer extends Component {
  * And then there's volume/seeker styles.
  */
 const styles = {
+    IconsMenu: {
+        color: '#fff',
+        fontSize: 18,
+        margin: 8,
+    },
     player: StyleSheet.create({
         container: {
             backgroundColor: 'transparent',
