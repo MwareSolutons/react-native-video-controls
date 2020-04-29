@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      "react-native-video-controls@2.2.3",
+      "/Users/sanderkerstens/Downloads/Apps_All_Generic/MwareIPTV_VL/TV_Platforms"
+    ]
+  ],
+  "_from": "react-native-video-controls@2.2.3",
+  "_id": "react-native-video-controls@2.2.3",
+  "_inBundle": false,
+  "_integrity": "sha512-jC7wazPUx8TxZZAp52dOkHUOEGyUb294NI3PIZp+IjsaG1KYkZ84rxUBLMvGiTPno2Jxw19nl8cgQSv6sMGpPQ==",
+  "_location": "/react-native-video-controls",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-native-video-controls@2.2.3",
+    "name": "react-native-video-controls",
+    "escapedName": "react-native-video-controls",
+    "rawSpec": "2.2.3",
+    "saveSpec": null,
+    "fetchSpec": "2.2.3"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-video-controls/-/react-native-video-controls-2.2.3.tgz",
+  "_spec": "2.2.3",
+  "_where": "/Users/sanderkerstens/Downloads/Apps_All_Generic/MwareIPTV_VL/TV_Platforms",
+  "author": {
+    "name": "Nubix",
+    "url": "https://github.com/itsnubix"
+  },
+  "bugs": {
+    "url": "https://github.com/itsnubix/react-native-video-controls/issues"
+  },
+  "dependencies": {
+    "lodash": "^4.16.4"
+  },
+  "description": "A set of GUI controls for the react-native-video component",
+  "homepage": "https://github.com/itsnubix/react-native-video-controls#readme",
+  "keywords": [
+    "react-native",
+    "react-native-video",
+    "react video controls",
+    "react video player"
+  ],
+  "license": "MIT",
+  "main": "VideoPlayer.js",
+  "name": "react-native-video-controls",
+  "peerDependencies": {
+    "react-native": ">=0.46.0",
+    "react-native-video": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/itsnubix/react-native-video-controls.git"
+  },
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "version": "2.2.3"
+}
