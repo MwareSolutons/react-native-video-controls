@@ -50,7 +50,8 @@
   "name": "react-native-video-controls",
   "peerDependencies": {
     "react-native": ">=0.46.0",
-    "react-native-video": "^2.0.0"
+    "react-native-video": "^2.0.0",
+    "react-native-fontawesome": "^7.0.0"
   },
   "repository": {
     "type": "git",

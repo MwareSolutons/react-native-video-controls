@@ -1,8 +1,8 @@
 import React, { Component, } from 'react';
-import { Dimensions } from 'react-native'
 import Video from 'react-native-video';
 import VLCPlayer from 'react-native-vlc-player';
 import renderIf from './RenderIf';
+import FontAwesome, { SolidIcons, RegularIcons, BrandIcons } from 'react-native-fontawesome';
 
 import {
     TouchableWithoutFeedback,
@@ -929,7 +929,6 @@ export default class VideoPlayer extends Component {
      * Back button control
      */
     renderBack() {
-
         return this.renderControl(
             <Image
                 source={ require( './assets/img/back.png' ) }
@@ -963,6 +962,7 @@ export default class VideoPlayer extends Component {
                     { ...this.player.volumePanResponder.panHandlers }
                 >
                     <Image style={ styles.volume.icon } source={ require( './assets/img/volume.png' ) } />
+                       
                 </View>
             </View>
         );
@@ -1080,7 +1080,7 @@ export default class VideoPlayer extends Component {
     renderAudioTrackSelection() {
         let source =  require( './assets/img/audio.png' )
         return this.renderControl(
-            <Image source={ source } />,
+            <FontAwesome style={styles.IconsMenu} icon={SolidIcons.audioDescription} />,
             this.events.onAudioTrackSelection,
             styles.controls.playPause
         );
@@ -1088,7 +1088,7 @@ export default class VideoPlayer extends Component {
     renderTextTrackSelection() {
         let source =  require( './assets/img/subs.png' )
         return this.renderControl(
-            <Image source={ source } />,
+            <FontAwesome style={styles.IconsMenu} icon={SolidIcons.closedCaptioning} />,
             this.events.onTextTrackSelection,
             styles.controls.playPause
         );
@@ -1097,7 +1097,7 @@ export default class VideoPlayer extends Component {
     renderScreenSize() {
         let source =  require( './assets/img/size.png' )
         return this.renderControl(
-            <Image source={ source } />,
+            <FontAwesome style={styles.IconsMenu} icon={SolidIcons.expand} />,
             this.events.onScreenSize,
             styles.controls.playPause
         );
