@@ -1014,11 +1014,12 @@ export default class VideoPlayer extends Component {
                         { playPauseControl }
                         { textTrackControl}
                         { audioTrackControl}
+                        { screenSizeControl}
                 
                     </View>            
                         { this.renderTitle() }
                         <View style={styles.controls.row}>
-                            { screenSizeControl}
+                   
                             { timerControl }
                         </View>
                     </View>
@@ -1080,7 +1081,7 @@ export default class VideoPlayer extends Component {
     renderAudioTrackSelection() {
         let source =  require( './assets/img/audio.png' )
         return this.renderControl(
-            <FontAwesome style={styles.IconsMenu} icon={SolidIcons.audioDescription} />,
+            <Image source={ source } />,
             this.events.onAudioTrackSelection,
             styles.controls.playPause
         );
@@ -1088,7 +1089,7 @@ export default class VideoPlayer extends Component {
     renderTextTrackSelection() {
         let source =  require( './assets/img/subs.png' )
         return this.renderControl(
-            <FontAwesome style={styles.IconsMenu} icon={SolidIcons.closedCaptioning} />,
+            <Image source={ source } />,
             this.events.onTextTrackSelection,
             styles.controls.playPause
         );
@@ -1097,7 +1098,7 @@ export default class VideoPlayer extends Component {
     renderScreenSize() {
         let source =  require( './assets/img/size.png' )
         return this.renderControl(
-            <FontAwesome style={styles.IconsMenu} icon={SolidIcons.expand} />,
+            <Image source={ source } />,
             this.events.onScreenSize,
             styles.controls.playPause
         );
